@@ -1,7 +1,7 @@
-import { StyleSheet } from "react-native";
 import Home from "../Screens/Home";
 import About from "../Screens/About";
 import { createDrawerNavigator } from '@react-navigation/drawer';
+import { styles } from "../Style/Styles";
 
 export default function MyDrawer() {
     const Drawer = createDrawerNavigator();    
@@ -15,11 +15,3 @@ export default function MyDrawer() {
         </Drawer.Navigator>
     );
 };
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
-})
